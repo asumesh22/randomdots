@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( step02_rng )
+find_package( OpenCV REQUIRED )
+message("OpenCV version: ${OpenCV_VERSION}")
+add_executable( step02_rng step02_rng.cpp )
+target_link_libraries( step02_rng ${OpenCV_LIBS} )
